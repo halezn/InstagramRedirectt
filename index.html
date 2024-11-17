@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Instagram</title>
+    <script>
+        function openInstagram() {
+            // تلاش برای باز کردن اپلیکیشن اینستاگرام
+            window.location = "instagram://user?username=halezn";
+
+            // اگر اپلیکیشن نصب نباشد
+            setTimeout(function() {
+                alert("Instagram app is not installed on your device.");
+            }, 1000);
+        }
+    </script>
+</head>
+<body onload="openInstagram()">
+    <h1>Redirecting to Instagram...</h1>
+</body>
+</html>
